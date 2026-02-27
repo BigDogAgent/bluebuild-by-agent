@@ -17,6 +17,21 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Inter
+        - Inter Tight
+        - DM Sans
+        - Lekton
+        - Fira Code
+        - Urbanist
+        - Kumbh Sans
+        - Inconsolata
+        - Source Code Pro
+        - Roboto Flex
+        - Jost
+
   - type: dnf
     repos:
       copr:
