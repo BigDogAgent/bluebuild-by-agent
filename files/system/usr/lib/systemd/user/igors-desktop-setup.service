@@ -1,0 +1,12 @@
+[Unit]
+Description=Igor's first-login desktop setup
+After=plasma-plasmashell.service
+Requires=plasma-plasmashell.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/igors-desktop-setup
+RemainAfterExit=yes
+
+[Install]
+WantedBy=plasma-plasmashell.service

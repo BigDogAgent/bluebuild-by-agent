@@ -1,0 +1,31 @@
+#!/bin/bash
+set -euo pipefail
+
+SENTINEL="$HOME/.config/.igors-desktop-setup-done"
+[ -f "$SENTINEL" ] && exit 0
+
+# Wait for plasmashell to be fully ready
+sleep 5
+
+qdbus6 org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript '
+    // Set all desktops to FolderView layout with slideshow wallpaper
+    var allDesktops = desktops();
+    for (var i = 0; i < allDesktops.length; i++) {
+        var d = allDesktops[i];
+
+        // Set layout to Folder View
+        d.layoutPlugin = "org.kde.plasma.folder";
+
+        // Set wallpaper plugin to slideshow
+        d.wallpaperPlugin = "org.kde.slideshow";
+
+        // Configure slideshow settings
+        d.currentConfigGroup = ["Wallpaper", "org.kde.slideshow", "General"];
+        d.writeConfig("SlidePaths", "/usr/share/wallpapers/igor");
+        d.writeConfig("SlideInterval", 3600);   // 1 hour in seconds
+        d.writeConfig("Random", true);
+        d.writeConfig("FillMode", 2);            // 2 = PreserveAspectCrop = Scaled and cropped
+    }
+'
+
+touch "$SENTINEL"
