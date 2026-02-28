@@ -54,6 +54,12 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - org.gnome.Loupe
           - com.brave.Browser
+          - org.onlyoffice.desktopeditors
+          - org.fedoraproject.MediaWriter
+          - com.github.wwmm.easyeffects
+          - org.signal.Signal
+          - com.jgraph.drawio.desktop
+
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
