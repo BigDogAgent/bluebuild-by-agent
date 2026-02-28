@@ -22,9 +22,11 @@ modules:
       - fix-permissions.sh
 
   - type: systemd
-      user:
-        enabled:
-          - igors-desktop-setup.service
+    system:
+      enabled: []
+    user:
+      enabled:
+        - igors-desktop-setup.service
 
   - type: fonts
     fonts:
