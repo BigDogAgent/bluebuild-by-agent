@@ -61,6 +61,10 @@ modules:
           - com.jgraph.drawio.desktop
           - io.github.shiftey.Desktop
           - io.podman_desktop.PodmanDesktop
+          - org.gnome.Firmware
+          - org.kde.gwenview
+          - io.github.DenysMb.Kontainer
+          - com.github.PintaProject.Pinta
 
       - scope: user # Also add Flathub user repo, but no user packages
 
