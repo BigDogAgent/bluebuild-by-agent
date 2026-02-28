@@ -59,6 +59,8 @@ modules:
           - com.github.wwmm.easyeffects
           - org.signal.Signal
           - com.jgraph.drawio.desktop
+          - io.github.shiftey.Desktop
+          - io.podman_desktop.PodmanDesktop
 
       - scope: user # Also add Flathub user repo, but no user packages
 
