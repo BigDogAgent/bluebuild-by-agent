@@ -76,6 +76,7 @@ modules:
           - org.gnome.Firmware
           - org.kde.gwenview
           - io.github.DenysMb.Kontainer
+          - com.ranfdev.DistroShelf
           - com.github.PintaProject.Pinta
 
       - scope: user # Also add Flathub user repo, but no user packages
