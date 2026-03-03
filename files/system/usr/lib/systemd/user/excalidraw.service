@@ -1,12 +1,14 @@
 [Unit]
 Description=Excalidraw local instance
-After=network.target
+After=podman-pull-excalidraw.service
+Wants=podman-pull-excalidraw.service
 
 [Service]
-# Rootless podman run
-ExecStart=/usr/bin/podman run --rm --name excalidraw -p 5000:80 excalidraw/excalidraw
-ExecStop=/usr/bin/podman stop excalidraw
 Restart=on-failure
+ExecStartPre=-/usr/bin/podman rm -f excalidraw
+ExecStartPre=/usr/bin/podman pull docker.io/excalidraw/excalidraw:latest
+ExecStart=/usr/bin/podman run --rm --name excalidraw -p 5000:80 docker.io/excalidraw/excalidraw:latest
+ExecStop=/usr/bin/podman stop excalidraw
 
 [Install]
 WantedBy=default.target

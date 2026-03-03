@@ -1,0 +1,12 @@
+[Unit]
+Description=Pull Excalidraw Image on First Boot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/podman pull docker.io/excalidraw/excalidraw:latest
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

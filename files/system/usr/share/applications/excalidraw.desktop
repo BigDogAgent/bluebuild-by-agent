@@ -5,5 +5,5 @@ Exec=bash -c 'systemctl --user start excalidraw && sleep 2 && flatpak run com.br
 Icon=/usr/share/icons/excalidraw.png
 Terminal=false
 Type=Application
-Categories=Graphics;Office;Education;
+Categories=Graphics;Office;
 StartupWMClass=Excalidraw
