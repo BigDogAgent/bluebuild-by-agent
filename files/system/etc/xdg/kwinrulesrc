@@ -1,0 +1,10 @@
+[General]
+rules=ExcalidrawRule
+
+[ExcalidrawRule]
+Description=Excalidraw icon override
+desktopfile=excalidraw
+desktopfilerule=2
+wmclass=brave-localhost__-Default
+wmclasscomplete=false
+wmclassmatch=1

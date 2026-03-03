@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Excalidraw
+Comment=Virtual whiteboard for sketching hand-drawn diagrams
+Exec=bash -c 'systemctl --user start excalidraw && sleep 2 && flatpak run com.brave.Browser --app=http://localhost:5000 --class=Excalidraw'
+Icon=/usr/share/icons/excalidraw.png
+Terminal=false
+Type=Application
+Categories=Graphics;Office;Education;
+StartupWMClass=Excalidraw

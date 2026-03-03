@@ -28,6 +28,7 @@ modules:
     user:
       enabled:
         - igors-desktop-setup.service
+        - excalidraw.service
 
   - type: fonts
     fonts:
