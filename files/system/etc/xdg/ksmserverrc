@@ -1,3 +1,4 @@
 [General]
 loginMode=default
+confirmLogout=false
 shutdownGracePeriod=0
