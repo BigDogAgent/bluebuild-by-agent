@@ -1,7 +1,8 @@
 [General]
 font=Inter,10,-1,5,400,0,0,0,0,0,Regular
-fixed=Inconsolata,10,-1,5,400,0,0,0,0,0,Regular
+fixed=Inconsolata,10,-1,5,400,0,0,0,0,0,Light
 smallestReadableFont=Inter,8,-1,5,400,0,0,0,0,0,Regular
 toolBarFont=Inter,9,-1,5,400,0,0,0,0,0,Regular
 menuFont=Inter,10,-1,5,400,0,0,0,0,0,Regular
 desktopFont=Inter,10,-1,5,400,0,0,0,0,0,Regular
+windowfont=inter,10,-1,5,400,0,0,0,0,0,Regular
