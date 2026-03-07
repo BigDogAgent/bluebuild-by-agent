@@ -89,6 +89,7 @@ modules:
           - com.ranfdev.DistroShelf
           - org.deskflow.deskflow
           - com.github.PintaProject.Pinta
+          - md.obsidian.Obsidian
 
       - scope: user # Also add Flathub user repo, but no user packages
 
