@@ -90,6 +90,7 @@ modules:
           - org.deskflow.deskflow
           - com.github.PintaProject.Pinta
           - md.obsidian.Obsidian
+          - io.github.zingytomato.netpeek
 
       - scope: user # Also add Flathub user repo, but no user packages
 
