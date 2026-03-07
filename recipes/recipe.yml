@@ -48,7 +48,7 @@ modules:
 
   - type: dnf
     repos:
-      nonfree: true
+      nonfree: rpmfusion
       copr:
         - atim/starship
     install:
