@@ -48,11 +48,17 @@ modules:
 
   - type: dnf
     repos:
+      nonfree: true
       copr:
         - atim/starship
     install:
       packages:
         - micro
+        - starship
+        - dolphin-plugins           # For Git integration in Dolphin
+        - libavcodec-freeworld      # Better video codecs
+        - mesa-va-drivers-freeworld # Hardware acceleration for AMD/Intel
+        - intel-media-driver        # Specific for Intel hardware acceleration
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)

@@ -1,0 +1,23 @@
+[General]
+# Sets the default view to "Details" (1=Details, 0=Icons, 2=Compact)
+ViewMode=1
+# Enables the Git/Version Control plugin by default
+VersionControlPlugins=git
+# Ensures Dolphin uses the same view for every folder
+GlobalViewProps=true
+
+[MainWindow]
+# Enables Split View (F3) by default
+SplitView=true
+# Makes the embedded terminal (F4) visible on launch
+TerminalPanelVisible=true
+
+[DetailsMode]
+# Sets the standard icon size in Details view to 16px
+IconSize=16
+# Sets the thumbnail/preview icon size in Details view to 16px
+PreviewSize=16
+
+[KFileDialog Settings]
+# Optional: Ensures the file picker also defaults to Details
+ViewMode=1
