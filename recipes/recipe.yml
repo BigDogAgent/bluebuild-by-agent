@@ -48,23 +48,25 @@ modules:
 
   - type: dnf
     repos:
+      # Use the specific string 'rpmfusion' instead of true
       nonfree: rpmfusion
       copr:
-        - atim/starship
+        enable:
+          - atim/starship
     install:
+      # CRITICAL: This allows the 'freeworld' codecs to replace the 'free' ones
+      allow-erasing: true
       packages:
         - micro
         - starship
-        - dolphin-plugins           # For Git integration in Dolphin
-        - libavcodec-freeworld      # Better video codecs
-        - mesa-va-drivers-freeworld # Hardware acceleration for AMD/Intel
-        - intel-media-driver        # Specific for Intel hardware acceleration
+        - dolphin-plugins
+        - libavcodec-freeworld
+        - mesa-va-drivers-freeworld
+        - intel-media-driver
     remove:
       packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firefox-langpacks
 
   - type: default-flatpaks
     configurations:
