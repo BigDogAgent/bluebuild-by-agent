@@ -2,7 +2,7 @@
 # Sets the default view to "Details" (1=Details, 0=Icons, 2=Compact)
 ViewMode=1
 # Enables the Git/Version Control plugin by default
-VersionControlPlugins=git
+# VersionControlPlugins=git
 # Ensures Dolphin uses the same view for every folder
 GlobalViewProps=true
 
