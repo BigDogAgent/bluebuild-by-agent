@@ -1,23 +1,25 @@
-[General]
-# Sets the default view to "Details" (1=Details, 0=Icons, 2=Compact)
-ViewMode=1
-# Enables the Git/Version Control plugin by default
-# VersionControlPlugins=git
-# Ensures Dolphin uses the same view for every folder
-GlobalViewProps=true
-
-[MainWindow]
-# Enables Split View (F3) by default
-SplitView=true
-# Makes the embedded terminal (F4) visible on launch
-TerminalPanelVisible=true
-
-[DetailsMode]
-# Sets the standard icon size in Details view to 16px
-IconSize=16
-# Sets the thumbnail/preview icon size in Details view to 16px
+[CompactMode]
 PreviewSize=16
 
-[KFileDialog Settings]
-# Optional: Ensures the file picker also defaults to Details
+[DetailsMode]
+IconSize=16
+PreviewSize=16
+
+[General]
+GlobalViewProps=true
+Version=202
 ViewMode=1
+ViewPropsTimestamp=2026,3,8,20,14,57.396
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+ViewMode=1
+
+[MainWindow]
+MenuBar=Disabled
+SplitView=true
+TerminalPanelVisible=true
+
+[PreviewSettings]
+Plugins=audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,directorythumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,ffmpegthumbs,fontthumbnail,gsthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,mobithumbnail,opendocumentthumbnail,rawthumbnail,svgthumbnail,windowsexethumbnail,windowsimagethumbnail
