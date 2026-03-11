@@ -19,7 +19,7 @@ modules:
 
   - type: kargs
     kargs:
-      - xe.force_probe=*
+      - module_blacklist=i915
 
   - type: script
     scripts:
