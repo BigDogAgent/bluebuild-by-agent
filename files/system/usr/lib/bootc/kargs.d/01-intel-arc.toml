@@ -1,0 +1,2 @@
+kargs = ["module_blacklist=i915"]
+match-architectures = ["x86_64"]
