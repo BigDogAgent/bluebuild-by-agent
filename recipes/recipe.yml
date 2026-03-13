@@ -63,6 +63,7 @@ modules:
         - libavcodec-freeworld
         - mesa-va-drivers-freeworld
         - intel-media-driver
+        - isomd5sum
     remove:
       packages:
         - firefox
