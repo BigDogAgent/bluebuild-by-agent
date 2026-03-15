@@ -48,13 +48,13 @@ modules:
 
   - type: dnf
     repos:
-      # Use the specific string 'rpmfusion' instead of true
       nonfree: rpmfusion
+      files:
+        - https://cli.github.com/packages/rpm/gh-cli.repo
       copr:
         enable:
           - atim/starship
     install:
-      # CRITICAL: This allows the 'freeworld' codecs to replace the 'free' ones
       allow-erasing: true
       packages:
         - micro
@@ -64,6 +64,7 @@ modules:
         - mesa-va-drivers-freeworld
         - intel-media-driver
         - isomd5sum
+        - gh
     remove:
       packages:
         - firefox
