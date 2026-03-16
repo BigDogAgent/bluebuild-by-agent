@@ -59,9 +59,8 @@ modules:
       packages:
         - intel-compute-runtime
         - intel-level-zero
-        - intel-level-zero-gpu
-        - level-zero
-        - level-zero-devel
+        - oneapi-level-zero
+        - oneapi-level-zero-devel
         - micro
         - starship
         - dolphin-plugins
