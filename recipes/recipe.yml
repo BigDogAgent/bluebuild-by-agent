@@ -57,6 +57,11 @@ modules:
     install:
       allow-erasing: true
       packages:
+        - intel-compute-runtime
+        - intel-level-zero
+        - intel-level-zero-gpu
+        - level-zero
+        - level-zero-devel
         - micro
         - starship
         - dolphin-plugins
@@ -91,7 +96,7 @@ modules:
           - com.ranfdev.DistroShelf
           - org.deskflow.deskflow
           - com.github.PintaProject.Pinta
-          - md.obsidian.Obsidian
+          - flathub com.github.marktext.marktext
           - io.github.zingytomato.netpeek
 
       - scope: user # Also add Flathub user repo, but no user packages
