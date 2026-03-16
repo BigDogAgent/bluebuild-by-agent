@@ -95,7 +95,7 @@ modules:
           - com.ranfdev.DistroShelf
           - org.deskflow.deskflow
           - com.github.PintaProject.Pinta
-          - flathub com.github.marktext.marktext
+          - com.github.marktext.marktext
           - io.github.zingytomato.netpeek
 
       - scope: user # Also add Flathub user repo, but no user packages
