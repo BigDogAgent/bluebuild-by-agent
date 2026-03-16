@@ -63,7 +63,6 @@ modules:
         - oneapi-level-zero-devel
         - micro
         - starship
-        - dolphin-plugins
         - libavcodec-freeworld
         - mesa-va-drivers-freeworld
         - intel-media-driver
