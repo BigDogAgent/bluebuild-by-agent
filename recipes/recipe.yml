@@ -60,7 +60,6 @@ modules:
         - intel-compute-runtime
         - intel-level-zero
         - oneapi-level-zero
-        - oneapi-level-zero-devel
         - micro
         - starship
         - libavcodec-freeworld
