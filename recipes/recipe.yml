@@ -95,6 +95,7 @@ modules:
           - com.github.PintaProject.Pinta
           - com.github.marktext.marktext
           - io.github.zingytomato.netpeek
+          - org.kde.kclock
 
       - scope: user # Also add Flathub user repo, but no user packages
 
