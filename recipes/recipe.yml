@@ -54,6 +54,9 @@ modules:
       copr:
         enable:
           - atim/starship
+      disable:
+        - rpmfusion-free-rawhide
+        - rpmfusion-nonfree-rawhide
     install:
       allow-erasing: true
       packages:
