@@ -56,9 +56,6 @@ modules:
           - atim/starship
     install:
       allow-erasing: true
-      options:
-        - --disablerepo=rpmfusion-free-rawhide
-        - --disablerepo=rpmfusion-nonfree-rawhide
       packages:
         - intel-compute-runtime
         - intel-level-zero
