@@ -50,7 +50,11 @@ modules:
     repos:
       nonfree: rpmfusion
       files:
-        - https://cli.github.com/packages/rpm/gh-cli.repo
+        add:
+          - https://cli.github.com/packages/rpm/gh-cli.repo
+        remove:
+          - rpmfusion-free-rawhide
+          - rpmfusion-nonfree-rawhide
       copr:
         enable:
           - atim/starship
