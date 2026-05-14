@@ -68,6 +68,7 @@ modules:
         - intel-media-driver
         - isomd5sum
         - gh
+        - wl-clipboard
     remove:
       packages:
         - firefox
