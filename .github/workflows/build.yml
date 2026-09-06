@@ -42,3 +42,22 @@ jobs:
 
           # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
+keepalive:
+    name: Keep Scheduled Workflow Active
+    # only needed on schedule runs - re-arms this workflow before GitHub's
+    # 60-day-inactivity auto-disable can trigger. See:
+    # https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Re-enable this workflow via GitHub API
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api \
+            --method PUT \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "/repos/${{ github.repository }}/actions/workflows/build.yml/enable"
