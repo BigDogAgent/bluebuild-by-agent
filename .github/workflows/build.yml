@@ -42,7 +42,7 @@ jobs:
 
           # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
-keepalive:
+  keepalive:
     name: Keep Scheduled Workflow Active
     # only needed on schedule runs - re-arms this workflow before GitHub's
     # 60-day-inactivity auto-disable can trigger. See:
